@@ -1,0 +1,38 @@
+﻿extends layout
+
+block content
+  div
+  a(href='/')
+    img(src='images/rogo.png', alt='サンプル')
+  br
+  
+  div
+  serch
+  a#serch(href='/serch') 検索
+  
+  
+  
+  
+  label(for='text') 新しいToDoリストを作成する
+  // ToDo入力フォームを作成する
+  
+  
+  
+  .form
+    form#form
+      p
+        label(for='text') 
+        input#text(type='text',name='text',size='35' ,maxlength='30')
+        &nbsp;
+        &nbsp;
+        input(type='submit',value='リストの作成')
+  // ToDo一覧を表示する
+  #todocom
+
+  
+  .list
+
+// jQueryとtodo.jsを読み込む
+block scripts
+  script(src='http://code.jquery.com/jquery-2.0.0.min.js')
+  script(src='javascripts/todo.js')

@@ -1,0 +1,44 @@
+﻿extends layout
+
+block content
+ 
+  // ToDo入力フォームを作成する
+  div
+  a(href='/')
+    img(src='images/rogo.png', alt='サンプル')
+  
+  div
+  serch
+  a#serch(href='/serch') 検索
+  
+  #todoname
+  
+  .form
+    form#form
+      p
+        label(for='text') 内容
+        input#text(type='text',name='text',size='35' ,maxlength='30',placeholder="新しいToDoを入力してください")
+      p
+        label(for='limit') 期限
+        input#limit(type='date',name='limit',size='25' )
+        &nbsp;
+        &nbsp;
+        input(type='submit',value='登録する')
+  // ToDo一覧を表示する
+  
+  div
+  input#wanton(type='button',value="ToDo切り替え",style="WIDTH: 100px; HEIGHT: 30px")
+  #wanttext
+
+  
+  div　クリックすると、チェックをつけられます
+  br
+
+  
+  
+  .list
+
+// jQueryとtodo.jsを読み込む
+block scripts
+  script(src='http://code.jquery.com/jquery-2.0.0.min.js')
+  script(src='javascripts/task.js')
