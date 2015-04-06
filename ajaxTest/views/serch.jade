@@ -6,28 +6,36 @@ block content
   a(href='/')
     img(src='images/rogo.png', alt='サンプル')
   
-  h1 serch
+  div
+  serch
+  a#serch(href='/serch') 検索
+  
+  h1 Serch
+  
   
   // ToDo入力フォームを作成する
-  label(for='text') 検索する
  
   .form
     form#form
       p
-        label(for='text') 
+        label(for='text') キーワードで検索する場合
+      p
         input#text(type='text',name='text',size='50' , maxlength='20',placeholder="検索ワードを入力してください")
-      p#serchbt
-        input(type='button',value='キーワード検索')
+        &nbsp;
+        &nbsp;
+        input(type='button',id='serchbt',value='キーワードでさがす')
       p
-        label(for='startdate') 開始
+        label(for='enddate') 期限の日付で検索する場合
+      p
         input#startdate(type='date',name='limit')
-      p
-        label(for='enddate') 終了
+        &nbsp;～
+        &nbsp;
         input#enddate(type='date',name='limit')
-       p#serchdate
-        input(type='button',value='日付検索')
+        &nbsp;
+        &nbsp;
+        input(type='button',id='serchdate',value='日付でさがす')
+  #serchword
   #notfound	  
-  
   
   // ToDo一覧を表示する
   .list
@@ -35,5 +43,5 @@ block content
 
 // jQueryとtodo.jsを読み込む
 block scripts
- script(src='http://code.jquery.com/jquery-2.0.0.min.js')
+ script(src='javascripts/jquery-2.0.0.min.js')
  script(src='javascripts/serch.js')  

@@ -1,112 +1,121 @@
-body {
-
-position: relative;
- left: 5%;
-width:80%;
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  
+﻿body {
+    position:relative;
+    left:5%;
+    width:80%;
+    padding:50px;
+    font:14px "Lucida Grande",Helvetica,Arial,sans-serif
 }
 
 a {
-  color: #00B7FF;
+    color:#00B7FF
 }
 
-.par{
-top:0px;
-z-index:2;
-position: relative;
- top: 29px;
- left: 30px;
- font-size:22px;
-
+.par {
+    top:0;
+    z-index:2;
+    position:relative;
+    top:29px;
+    left:30px;
+    font-size:22px
 }
-.parbar{
-top :0px;
-z-index:1;
-position:relative;
- top: 0px;
- left: 0px;
 
+.parbar {
+    top:0;
+    z-index:1;
+    position:relative;
+    top:0;
+    left:0
 }
-.title{
-position:relative;
- top: 30px;
- left: 0px;
- font-size:25px;
 
+.title {
+    position:relative;
+    top:30px;
+    left:0;
+    font-size:25px
 }
-.deleat{
-z-index:2;
-position:relative;
- top: 50px;
- left:95%;
 
+.deleat {
+    z-index:2;
+    position:relative;
+    top:50px;
+    left:95%
 }
-#serch{
-position:relative;
- top: -60px;
- left:90%;
- font-size:25px;
 
+#serch {
+    position:relative;
+    top:-60px;
+    left:90%;
+    font-size:25px
 }
-.todo{
 
-
-
-
+.todo {
 }
-.tasktitle{
-position:relative;
- left:20;
-font-size:25px;
 
+.tasktitle {
+    position:relative;
+    left:20px;
+    font-size:25px
 }
-.taskdeleat{
-z-index:2;
-position:relative;
- left:96%;
- top:-50px;
+
+.taskdeleat {
+    z-index:2;
+    position:relative;
+    left:96%;
+    top:-50px
 }
-.tasktodo{
-background-color:#ddffdd;
-padding:10px 0px 0px 10px;
-padding-bottom:-20px;
+
+.tasktodo {
+    background-color:#dfd;
+    padding:10px 0 0 10px;
+    padding-bottom:-20px
 }
-.serchtodo{
-background-color:#eeeeff;
-padding:10px 0px 0px 10px;
 
-
-
-
+.serchtodo {
+    background-color:#eef;
+    padding:10px 0 0 10px
 }
-a:link { color: #000000; }
-a:visited { color: #000000; }
-a:hover { color: #000000; }
-a:active { color: #000000; }
 
-#todoname{
-
-font-size:40px;
+a:link {
+    color:#000
 }
-.todotodo{
 
-background-color:#eeeeee;
-padding:0px 10px 20px 10px;
-
+a:visited {
+    color:#000
 }
-.isfinish{
-position:relative;
-top:-55px;
-left:80%;
-font-size:30px;
 
+a:hover {
+    color:#000
 }
-#wanttext{
-position:relative;
-top:-30px;
-left:15%;
-font-size:25px;
 
+a:active {
+    color:#000
+}
+
+#todoname {
+    font-size:40px
+}
+
+.todotodo {
+    background-color:#eee;
+    padding:0 10px 20px;
+    padding-top:-50px
+}
+
+.isfinish {
+    position:relative;
+    top:-55px;
+    left:80%;
+    font-size:30px
+}
+
+#wanttext {
+    position:relative;
+    top:-30px;
+    left:15%;
+    font-size:25px
+}
+
+.errtext {
+    color:#f22;
+	font-size:18px;
 }

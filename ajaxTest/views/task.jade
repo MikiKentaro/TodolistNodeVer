@@ -25,14 +25,17 @@ block content
         &nbsp;
         input(type='submit',value='登録する')
   // ToDo一覧を表示する
-  
+
   div
   input#wanton(type='button',value="ToDo切り替え",style="WIDTH: 100px; HEIGHT: 30px")
   #wanttext
-
   
-  div　クリックすると、チェックをつけられます
+  #todocom
   br
+  
+  div Todoをクリックすると完了、未完了が切り替わります
+  br
+
 
   
   
@@ -40,5 +43,5 @@ block content
 
 // jQueryとtodo.jsを読み込む
 block scripts
-  script(src='http://code.jquery.com/jquery-2.0.0.min.js')
+  script(src='javascripts/jquery-2.0.0.min.js')
   script(src='javascripts/task.js')
