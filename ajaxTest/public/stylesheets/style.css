@@ -105,7 +105,8 @@ a:active {
     position:relative;
     top:-55px;
     left:80%;
-    font-size:30px
+    font-size:30px;
+	color:#333;
 }
 
 #wanttext {

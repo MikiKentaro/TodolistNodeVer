@@ -86,8 +86,8 @@ function getList() {
                             '<div class="taskdeleat"><input id="deleatButton' +
                             num +
                             '" type="button" value="×"></div>' +
-                            '</div><div class="isfinish">' +
-                            isFinish + '</div>');
+                            '</div><div class="isfinish"><div class="isfin'+num+'">' +
+                            isFinish + '</div></div>');
                         $list.append(
                             '<script>$("#deleatButton' +
                             num +
@@ -104,9 +104,10 @@ function getList() {
                             //'alert("asdd");'+
                             '}</script>');
                         $list.append(
-                            '<script>$(".check2' +
-                            num +
-                            '").click(function() { checkbox' +
+                            '<script>$(".check2' +num +'").click(function() { checkbox' +
+                            num + '();countcheck' +
+                            num + '();});' +
+							'$(".isfin' +num +'").click(function() { checkbox' +
                             num + '();countcheck' +
                             num + '();});' +
                             'function checkbox' +
